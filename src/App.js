@@ -207,7 +207,7 @@ const cardElements = cards.map(card => (
             <FadeInOut show={show} duration={500} style={extraStyles}>
                 Game Over!
                 </FadeInOut>
-            <img src="/images/logo.png" className="pokemon-logo"/>
+            <img src="./images/logo.png" className="pokemon-logo"/>
             <div className="header">
             <label className="toggleSwitch nolabel" >
 											<input onClick={toggleDifficulty} type="checkbox" />
