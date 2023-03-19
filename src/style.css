@@ -1,0 +1,321 @@
+@import "https://fonts.googleapis.com/css?family=VT323";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: #0B2434;
+    font-family: "VT323", Helvetica, Verdana, sans-serif;
+}
+
+main {
+    height: 100%;
+    border-radius: 6px;
+    padding: 0.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.roll-card {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.roll-card:focus {
+    outline: none;
+}
+
+.roll-card:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.card-image {
+    height: 20rem;
+    width: auto;
+}
+.card-container {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: #FFF;
+    padding: 2rem 2.5rem;
+    border-radius: 6px;
+    margin: 0.5rem 0 0 0;
+}
+
+.card-face {
+    height: 20rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.pokemon-logo {
+    height: 9rem;
+}
+.header {
+    margin: 0.5rem 0 0 0;
+    width: 55rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    z-index: 5;
+    margin: 10px;
+    padding: 5px 8px 5px 8px;
+    display: inline-block;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 22px;
+    font-family: "VT323", Helvetica, Verdana, sans-serif;
+    height: 2.5rem;
+    width: 9rem;
+    color: #FFF;
+    background-color: #F85888;
+    border: 2px solid #A13959;
+}
+
+/*  Toggle Switch  */
+
+.toggleSwitch span span {
+	display: none;
+}  
+  
+.toggleSwitch {
+	display: inline-block;
+	position: relative;
+	overflow: visible;
+	cursor: pointer;
+    padding: 2px;
+    display: inline-block;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 22px;
+    font-family: "VT323", Helvetica, Verdana, sans-serif;
+    height: 2.5rem;
+    width: 9rem;
+    color: #FFF;
+    background-color: #fff;
+    border: 2px solid #A13959;
+}
+.toggleSwitch * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.toggleSwitch label,
+.toggleSwitch > span {
+	line-height: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.toggleSwitch input:focus ~ a,
+.toggleSwitch input:focus + label {
+	outline: none;
+}
+.toggleSwitch label {
+	position: relative;
+	z-index: 3;
+	display: block;
+	width: 100%;
+}
+.toggleSwitch input {
+	position: absolute;
+	opacity: 0;
+	z-index: 5;
+}
+.toggleSwitch > span {
+	position: absolute;
+	left: 0;
+	width: calc(100% - 6px);
+	margin: 0;
+	text-align: left;
+	white-space: nowrap;
+  margin:0 3px;
+}
+.toggleSwitch > span span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: block;
+	width: 50%;
+	margin-left: 50px;
+	text-align: left;
+	font-size: 0.9em;
+	width: auto;
+	left: 0;
+	top: -1px;
+	opacity: 1;
+	width:40%;
+	text-align: center;
+  line-height:34px;
+}
+.toggleSwitch a {
+	position: absolute;
+	right: 50%;
+	z-index: 4;
+	display: block;
+	top: 3px;
+	bottom: 3px;
+	padding: 0;
+	left: 3px;
+	width: 50%;
+	background-color: #F85888;
+    border-radius: 6px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.toggleSwitch > span span:first-of-type {
+	color: #FFF;
+	opacity: 1;
+	left: 0;
+	margin: 0;
+    width: 50%;
+}
+.toggleSwitch > span span:last-of-type {
+	left:auto;
+	right:0;
+	color: #999;
+	margin: 0;
+    width: 50%;
+}
+.toggleSwitch > span:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	/* background-color: #fafafa;
+	border: 1px solid #ccc; */
+	border-radius: 30px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.toggleSwitch input:checked ~ a {
+	left: calc(50% - 3px);
+}
+.toggleSwitch input:checked ~ span:before {
+	/* border-color: #0097D1;
+	box-shadow: inset 0 0 0 30px #0097D1; */
+}
+.toggleSwitch input:checked ~ span span:first-of-type {
+	left:0;
+	color:#999;
+}
+.toggleSwitch input:checked ~ span span:last-of-type {
+	/* opacity: 1;
+	color: #fff;	 */
+	color:#FFF;
+}
+/* Switch Sizes */
+.toggleSwitch.large {
+	width: 60px;
+	height: 27px;
+}
+.toggleSwitch.large a {
+	width: 27px;
+}
+.toggleSwitch.large > span {
+	height: 29px;
+	line-height: 28px;
+}
+.toggleSwitch.large input:checked ~ a {
+	left: 41px;
+}
+.toggleSwitch.large > span span {
+	font-size: 1.1em;
+}
+.toggleSwitch.large > span span:first-of-type {
+	left: 50%;
+}
+.toggleSwitch.xlarge {
+	width: 80px;
+	height: 36px;
+}
+.toggleSwitch.xlarge a {
+	width: 36px;
+}
+.toggleSwitch.xlarge > span {
+	height: 38px;
+	line-height: 37px;
+}
+.toggleSwitch.xlarge input:checked ~ a {
+	left: 52px;
+}
+.toggleSwitch.xlarge > span span {
+	font-size: 1.4em;
+}
+.toggleSwitch.xlarge > span span:first-of-type {
+	left: 50%;
+}
+
+  /*  End Toggle Switch  */
