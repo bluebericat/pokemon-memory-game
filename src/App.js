@@ -121,8 +121,6 @@ React.useEffect(() => {
           newCards.push(newCard)
         }
       }
-        
-    console.log(newCards)
     return newCards
 }
 const handleClick = (value) => {
