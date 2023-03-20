@@ -136,10 +136,11 @@ function holdCard(value) {
 }
 function reRoll() {
   if(gameOver) {
+    toggleShow()
     setScore(0)
     setGameOver(false)
     setGameWon(false)
-    toggleShow()
+    
     if (difficulty === 'easy') {
       setHeld({
         0: false,
