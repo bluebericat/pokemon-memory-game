@@ -6,8 +6,8 @@ import Confetti from "react-confetti"
 import FadeInOut from "./components/FadeInOut.js";
 
 function App() {
-  const easyImages = ['/images/eeveecard.webp', '/images/darkespeon.webp', '/images/lightflareon.webp', '/images/glaceon.webp', '/images/lightjolteon.webp', '/images/leafeoncard.webp', '/images/darksylveon.webp', '/images/neoumbreon.webp', '/images/lightvaporeon.webp',]
-  const hardImages = ['./images/squirtle.webp', './images/charmander.webp', './images/bulbasaur.webp', './images/cyndaquil.webp', './images/chikorita.webp', './images/totodile.webp', './images/torchic.webp', './images/treecko.webp', './images/mudkip.webp', './images/chimchar.webp', './images/turtwig.webp', './images/piplup.webp', './images/tepig.webp', './images/snivy.webp', './images/oshawott.webp', './images/fennekin.webp', './images/chespin.webp', './images/froakie.webp', './images/litten.webp', './images/rowlett.webp', './images/popplio.webp', './images/scorbunny.webp', './images/grookey.webp', './images/sobble.webp', './images/fuecoco.webp', './images/sprigatito.webp', './images/quaxly.webp']
+  const easyImages = ['./pokemon-memory-game/images/eeveecard.webp', './pokemon-memory-game/images/darkespeon.webp', './pokemon-memory-game/images/lightflareon.webp', '/pokemon-memory-game/images/glaceon.webp', './pokemon-memory-game/images/lightjolteon.webp', './pokemon-memory-game/images/leafeoncard.webp', './pokemon-memory-game/images/darksylveon.webp', './pokemon-memory-game/images/neoumbreon.webp', './pokemon-memory-game/images/lightvaporeon.webp',]
+  const hardImages = ['./pokemon-memory-game/images/squirtle.webp', './pokemon-memory-game/images/charmander.webp', './pokemon-memory-game/images/bulbasaur.webp', './pokemon-memory-game/images/cyndaquil.webp', './pokemon-memory-game/images/chikorita.webp', './pokemon-memory-game/images/totodile.webp', './pokemon-memory-game/images/torchic.webp', './pokemon-memory-game/images/treecko.webp', './pokemon-memory-game/images/mudkip.webp', './pokemon-memory-game/images/chimchar.webp', './pokemon-memory-game/images/turtwig.webp', './pokemon-memory-game/images/piplup.webp', './pokemon-memory-game/images/tepig.webp', './pokemon-memory-game/images/snivy.webp', './pokemon-memory-game/images/oshawott.webp', './pokemon-memory-game/images/fennekin.webp', './pokemon-memory-game/images/chespin.webp', './pokemon-memory-game/images/froakie.webp', './pokemon-memory-game/images/litten.webp', './pokemon-memory-game/images/rowlett.webp', './pokemon-memory-game/images/popplio.webp', './pokemon-memory-game/images/scorbunny.webp', './pokemon-memory-game/images/grookey.webp', './pokemon-memory-game/images/sobble.webp', './pokemon-memory-game/images/fuecoco.webp', './pokemon-memory-game/images/sprigatito.webp', './pokemon-memory-game/images/quaxly.webp']
   const [difficulty, setDifficulty] = useState('easy')
   const [cards, setCards] = useState(allNewCards())
   const [held, setHeld] = useState({
@@ -207,7 +207,7 @@ const cardElements = cards.map(card => (
             <FadeInOut show={show} duration={500} style={extraStyles}>
                 Game Over!
                 </FadeInOut>
-            <img src="./images/logo.png" className="pokemon-logo"/>
+            <img src="./pokemon-memory-game/images/logo.png" className="pokemon-logo"/>
             <div className="header">
             <label className="toggleSwitch nolabel" >
 											<input onClick={toggleDifficulty} type="checkbox" />
