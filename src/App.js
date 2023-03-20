@@ -205,7 +205,7 @@ const cardElements = cards.map(card => (
     <main>
             {gameWon && <Confetti width={window.innerWidth} height={window.innerHeight}/>}
             <FadeInOut show={show} duration={500} style={extraStyles}>
-                {gameWon ? 'You Did It!' : "Game Over"}
+                {gameWon ? "You Did It!" : "Game Over"}
                 </FadeInOut>
             <img src="/pokemon-memory-game/images/logo.png" className="pokemon-logo"/>
             <div className="header">
